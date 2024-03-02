@@ -1,0 +1,203 @@
+button,
+input {
+	font-family: "SF-Pro-Display", Arial, Helvetica, sans-serif;
+}
+.form {
+  padding-bottom: 0;
+  @include media-lg {
+    padding-bottom: 160px;
+  }
+  @include media-xl {
+    padding-bottom: 100px;
+  }
+  @include media-xxl {
+    padding-bottom: 100px;
+  }
+  @include media-3xl {
+    padding-bottom: 115px;
+  }
+  @include media-4xl {
+    padding-bottom: 160px;
+  }
+  .subtitle {
+    max-width: 548px;
+    margin-top: 58px;
+    margin-bottom: 50px;
+    color: #1F1F1F;
+    position: relative;
+    @include media-md {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include media-lg {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: -74px;
+    }
+    @include media-xl {
+      margin-top: 38px;
+      margin-bottom: 35px;
+    }
+    @include media-3xl {
+      margin-top: 44px;
+      margin-bottom: 45px;
+    }
+    @include media-4xl {
+      margin-top: 58px;
+      margin-bottom: 43px;
+    }
+    &--before {
+      display: none;
+      @include media-lg {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 182px;
+        left: 196px;
+        width: 479px;
+        height: 368px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        // background-image: url('../img/bg/strange.webp');
+        pointer-events: none;
+      }
+      @include media-xl {
+        bottom: 152px;
+        left: 146px;
+        width: 569px;
+        height: 468px;
+      }
+      @include media-xxl {
+        bottom: 77px;
+        left: 206px;
+        width: 649px;
+        height: 488px;
+      }
+      @include media-3xl {
+
+      }
+      @include media-4xl {
+        bottom: 72px;
+        left: 296px;
+        width: 869px;
+        height: 668px;
+      }
+    }
+    .accent-text {
+      color: #246EB9;
+      @include media-4xl {
+        line-height: 46px;
+      }
+    }
+  }
+  &-line {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    &__input {
+      font-family: "Cabin", Arial, Helvetica, sans-serif;
+      width: 100%;
+      box-sizing: border-box;
+      color: #1F1F1F;
+      font-weight: 400;
+      outline: none;
+      border-radius: 50px;
+      border: 2px solid #C8D7E6;
+      height: 42px;
+      font-size: 14px;
+      line-height: 1.1;
+      padding: 10px 11px;
+      @include media-3xl {
+        height: 45px;
+        font-size: 17px;
+        padding: 10px 15px;
+      }
+      @include media-4xl {
+        padding: 14px 16px;
+        font-size: 20px;
+        height: 52px;
+      }
+      &::placeholder {
+        font-family: "Cabin", Arial, Helvetica, sans-serif;
+        color: #585858;
+        opacity: 0.8;
+      }
+      &.show-error {
+        border-color: red;
+        &~.error {
+          display: block;
+        }
+      }
+    }
+    &__label {
+      order: -1;
+      margin-bottom: 2px;
+      color: #8AAFD5;
+      font-weight: 400;
+      padding-left: 6px;
+      font-size: 14px;
+      line-height: 1.1;
+      @include media-3xl {
+        font-size: 17px;
+        margin-bottom: 6px;
+      }
+      @include media-4xl {
+        font-size: 20px;
+        line-height: 31px;
+        padding-left: 11px;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 28px;
+    text-align: right;
+    @include media-3xl {
+      margin-top: 32px;
+    }
+    @include media-4xl {
+      margin-top: 40px;
+    }
+    .btn {
+      padding: 15px 35px;
+      @include media-xl {
+        padding: 23px 26px;
+        font-size: 15px;
+        line-height: 1;
+      }
+      @include media-3xl {
+        padding: 25px 31px;
+        font-size: 17px;
+      }
+      @include media-4xl {
+        font-size: 20px;
+        padding: 34px 35px;
+      }
+    }
+  }
+  &__img {
+    @include media-xxl {
+      max-width: 490px;
+    }
+    @include media-3xl {
+
+    }
+    @include media-4xl {
+      max-width: none;
+    }
+    img {
+      max-width: 100%;
+      @include media-3xl {
+        max-width: 560px;
+      }
+      @include media-4xl {
+        max-width: initial;
+      }
+    }
+  }
+}
+.error {
+  display: none;
+  color: red;
+  margin-top: 6px;
+}

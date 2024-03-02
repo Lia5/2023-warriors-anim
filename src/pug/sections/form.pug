@@ -1,0 +1,42 @@
+section.form
+  .devider
+  .container 
+    .row
+      .col-12.col-lg-6.col-xl-5.col-xxl-6
+        .form__img.gsap-from-left
+          img(data-src="img/form.webp", alt="form", width="664", height="640").shadow.lazy
+      .col-12.col-lg-6.offset-xl-1.col-xl-5.offset-xxl-0
+        .subtitle
+          .subtitle--before(class="lazy" data-bg="img/bg/strange.webp" data-speed="1.2")
+          span Створять
+          span дітям
+          span.accent-text свято,
+          br
+          span.accent-text яке
+          span.accent-text залишиться
+          span в
+          span їх
+          span пам’яті
+          span на
+          span цілий
+          span рік!
+        form.form__body(enctype="multipart/form-data" name="contact")
+          // Hidden Required Fields
+          input(type='hidden', name='project_name', value='Warriors')
+          input(type='hidden', name='admin_email', value='warriorskiev@gmail.com')
+          input(type='hidden', name='form_subject', value='Contact')
+          // END Hidden Required Fields
+          input(type='hidden', name='info', value='Contact')
+          label.form-line
+            input.form-line__input.rfield(type="text" placeholder="Як вас звати?" required name="name")
+            span.form-line__label Ваше ім'я*
+            span.error Поле обов'язкове
+          label.form-line
+            input.form-line__input.rfield.phone-mask(type="text" placeholder="+380 (00) 000 00 00" required name="phone")
+            span.form-line__label Ваш номер телефону*
+            span.error Поле обов'язкове
+          label.form-line
+            input.form-line__input(type="text" placeholder="example@mail.com" name="email")
+            span.form-line__label Ваш e-mail
+          .form__btn
+            button(type="submit").btn Забронювати дату

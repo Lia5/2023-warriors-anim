@@ -1,0 +1,151 @@
+.reviews {
+  padding-bottom: 100px;
+  @include media-lg {
+    padding-bottom: 155px;
+  }
+  @include media-xl {
+    padding-bottom: 174px;
+  }
+  @include media-3xl {
+    padding-bottom: 207px;
+  }
+  @include media-4xl {
+    padding-bottom: 255px;
+  }
+  &--before {
+    content: "";
+    position: absolute;
+    transform: scale(-1);
+    bottom: -180px;
+    right: 0;
+    width: 387px;
+    height: 1000px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    // background-image: url('../img/bg/dots.webp');
+		pointer-events: none;
+  }
+  .title {
+    justify-content: center;
+    margin-bottom: 63px;
+    position: relative;
+    @include media-3xl {
+
+    }
+    @include media-4xl {
+      margin-bottom: 80px;
+    }
+    &--before {
+      content: "";
+      position: absolute;
+      bottom: 138px;
+      left: -23%;
+      width: 147%;
+      height: 452px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      // background-image: url('../img/bg/flash-run.webp');
+      pointer-events: none;
+      @include media-lg {
+        top: -456px;
+        left: -491px;
+        width: 1126px;
+        height: 1152px;
+      }
+      @include media-xl {
+        top: -456px;
+        left: -261px;
+        width: 816px;
+        height: 892px;
+      }
+      @include media-xxl {
+        top: -336px;
+        left: -381px;
+        width: 856px;
+        height: 862px;
+      }
+      @include media-3xl {
+
+      }
+      @include media-4xl {
+        top: -456px;
+        left: -491px;
+        width: 1126px;
+        height: 1152px;
+      }
+    }
+  }
+  &__item {
+    margin-bottom: 20px;
+    text-align: center;
+    @include media-lg {
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      @include media-lg {
+        margin-bottom: 0;
+      }
+
+    }
+    &--hidden {
+      @include media-xxl {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease-in-out;
+      }
+      &.active {
+        height: auto;
+        height: 100%;
+        opacity: 1;
+        overflow: visible;
+      }
+    }
+  }
+  .description {
+    text-align: center;
+    margin-top: 35px;
+    @include media-xxl {
+      margin-top: 0;
+    }
+  }
+  &__btn {
+    display: none;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    @include media-xxl {
+      display: block;
+    }
+    @include media-3xl {
+      margin-top: 85px;
+      margin-bottom: 41px;
+    }
+    @include media-4xl {
+      margin-top: 101px;
+      margin-bottom: 50px;
+    }
+    .btn {
+      @include media-4xl {
+        padding: 16px 27px;
+      }
+    }
+  }
+  .divider {
+    bottom: 80px;
+    transform: translate(-50%, 0) rotate(8.46deg);
+  }
+  .slick-dots {
+    display: flex;
+    @include media-xxl {
+      display: none;
+    }
+  }
+}

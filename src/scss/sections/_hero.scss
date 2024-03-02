@@ -1,0 +1,380 @@
+.hero {
+  padding-top: 100px;
+  padding-bottom: 460px;
+  @include media-md {
+    padding-top: 150px;
+  }
+  @include media-lg {
+    padding-top: 0;
+  }
+  @include media-xxl {
+    padding-bottom: 334px;
+  }
+  @include media-3xl {
+    padding-bottom: 404px;
+  }
+  @include media-4xl {
+    padding-bottom: 473px;
+  }
+  z-index: 1;
+  &--before {
+    content: "";
+    position: absolute;
+    bottom: 337px;
+    left: 0;
+    width: 387px;
+    height: 1000px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    // background-image: url('../img/bg/dots.webp');
+		pointer-events: none;
+  }
+  .title {
+    position: relative;
+    font-size: 38px;
+    line-height: 1.2;
+    justify-content: flex-end;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    @include media-sm {
+      font-size: 56px;
+    }
+    @include media-md {
+      margin-top: 210px;
+      max-width: 500px;
+      margin-left: auto;
+    }
+    @include media-lg {
+      max-width: none;
+      margin-top: -75px;
+      font-size: 62px;
+      margin-bottom: 0;
+    }
+    @include media-xl {
+      font-size: 60px;
+      line-height: 1.1;
+      margin-bottom: -60px;
+    }
+    @include media-3xl {
+      margin-top: -40px;
+      font-size: 65px;
+      line-height: 1.2;
+      margin-bottom: -80px;
+    }
+    @include media-4xl {
+      margin-top: -65px;
+      font-size: 80px;
+      margin-bottom: -94px;
+    }
+    .accent-text {
+      font-size: 65px;
+      line-height: 46px;
+      @include media-sm {
+        font-size: 86px;
+        line-height: 75px;
+      }
+      @include media-lg {
+        font-size: 83px;
+        line-height: 1;
+      }
+      @include media-3xl {
+
+      }
+      @include media-4xl {
+        font-size: 120px;
+        line-height: 100px;
+      }
+    }
+    &--before {
+      display: none;
+      @include media-lg {
+        display: block;
+        content: "";
+        position: absolute;
+        top: -540px;
+        left: -270px;
+        width: 635px;
+        height: 634px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        // background-image: url('../img/bg/sp-man.webp');
+        pointer-events: none;
+        z-index: -1;
+      }
+      @include media-xl {
+        top: -480px;
+        left: -310px;
+        width: 615px;
+        height: 654px;
+      }
+      @include media-3xl {
+        top: -544px;
+        left: -361px;
+        width: 715px;
+        height: 724px;
+      }
+      @include media-4xl {
+        top: -630px;
+        left: -430px;
+        width: 855px;
+        height: 834px;
+      }
+    }
+  }
+  &__shooter {
+    img {
+      max-width: 100%;
+      @include media-3xl {
+
+      }
+      @include media-4xl {
+        max-width: initial;
+      }
+    }
+  }
+  &__qwester {
+    position: relative;
+    z-index: 1;
+    @include media-lg {
+      margin-top: -210px;
+    }
+    @include media-3xl {
+      margin-top: -188px;
+    }
+    @include media-4xl {
+      margin-top: -210px;
+    }
+    img {
+      max-width: 100%;
+      @include media-3xl {
+
+      }
+      @include media-4xl {
+        max-width: initial;
+      }
+    }
+  }
+  .description {
+    max-width: 496px;
+    p {
+      margin-top: 0;
+    }
+    p:not(:last-child) {
+      margin-bottom: 12px;
+      @include media-lg {
+        margin-bottom: 24px;
+      }
+      @include media-3xl {
+        margin-bottom: 28px;
+      }
+      @include media-4xl {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  &__img {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    position: relative;
+    @include media-xl {
+      margin-top: 125px;
+    }
+    @include media-3xl {
+      margin-top: 148px;
+    }
+    @include media-4xl {
+      margin-top: 175px;
+      justify-content: flex-end;
+      display: flex;
+      margin-bottom: 0;
+    }
+    img {
+      width: 100%;
+      @include media-xl {
+        width: 109%;
+      }
+    }
+    &--before {
+      display: none;
+      @include media-lg {
+        display: block;
+        content: "";
+        position: absolute;
+        height: 431px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        // background-image: url('../img/bg/spider-red.webp');
+        z-index: -1;
+        pointer-events: none;
+        width: 520px;
+        top: 960px;
+        right: 65px;
+      }
+      @include media-lg {
+        top: 316px;
+        right: -145px;
+        width: 751px;
+        height: 531px;
+      }
+      @include media-xl {
+        width: 931px;
+        top: 152px;
+        right: -255px;
+        height: 761px;
+      }
+      @include media-3xl {
+        width: 1061px;
+        top: 152px;
+        right: -295px;
+        height: 871px;
+      }
+      @include media-4xl {
+        width: 1011px;
+        top: 416px;
+        right: -245px;
+        height: 731px;
+      }
+    }
+  }
+  &__subtitle {
+    @include media-lg {
+      margin-top: -121px;
+      margin-bottom: 30px;
+    }
+    @include media-xl {
+      margin-top: -321px;
+    }
+    @include media-3xl {
+      margin-top: -356px;
+    }
+    @include media-4xl {
+      margin-top: -319px;
+    }
+  }
+  .subtitle {
+    @include media-lg {
+      max-width: 358px;
+    }
+    @include media-3xl {
+
+    }
+    @include media-4xl {
+      max-width: 428px;
+    }
+  }
+  .text {
+    @include media-lg {
+      max-width: 329px;
+    }
+    @include media-3xl {
+
+  }
+  @include media-4xl {
+      max-width: 439px;
+    }
+    p {
+      margin-top: 0;
+    }
+    p:not(:last-child) {
+      margin-bottom: 12px;
+      @include media-lg {
+        margin-bottom: 18px;
+      }
+      @include media-3xl {
+
+      }
+      @include media-4xl {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .divider {
+    z-index: -2;
+    bottom: 195px;
+    transform: translate(-50%, 0) rotate(-8.46deg);
+    @include media-3xl {
+      bottom: 234px;
+    }
+    @include media-4xl {
+      bottom: 257px;
+    }
+  }
+}
+
+.line {
+  position: absolute;
+  top: 0;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	font-size: 29px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	border: 1px solid #1F1F1F;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  @include media-md {
+    top: 53px;
+  }
+  @include media-lg {
+    font-size: 28px;
+    transform: translate(-50%, 0) rotate(-18.07deg);
+    top: 174px;
+  }
+  @include media-3xl {
+    font-size: 31px;
+    top: 218px;
+    height: 50px;
+  }
+  @include media-4xl {
+    font-size: 40px;
+    height: 60px;
+    transform: translate(-50%, 0) rotate(-18.07deg);
+    top: 253px;
+  }
+	.icon {
+		width: 30px;
+		height: 30px;
+		min-width: 44px;
+		margin: 0 10px;
+    @include media-3xl {
+
+  }
+  @include media-4xl {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+    }
+	}
+	&--white {
+    display: none;
+    top: 570px;
+		background: #FFF;
+    border-color: #fff;
+    z-index: 1;
+    @include media-sm {
+      top: 695px;
+    }
+    @include media-md {
+      display: flex;
+      top: 935px;
+    }
+    @include media-lg {
+      transform: translate(-50%, 0) rotate(-7.636deg);
+      top: 143px;
+    }
+    @include media-3xl {
+      top: 183px;
+    }
+    @include media-4xl {
+      top: 209px;
+    }
+	}
+}

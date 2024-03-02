@@ -1,0 +1,92 @@
+.contact {
+  padding-bottom: 110px;
+  @include media-3xl {
+    padding-bottom: 119px;
+  }
+  @include media-4xl {
+    padding-bottom: 142px;
+  }
+  &--before {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    width: 387px;
+    height: 1000px;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    // background-image: url('../img/bg/dots.webp');
+		pointer-events: none;
+  }
+  .title {
+    margin-top: 80px;
+    justify-content: center;
+    @include media-3xl {
+      margin-top: 96px;
+    }
+    @include media-4xl {
+      margin-top: 110px;
+    }
+  }
+  .description {
+    display: flex;
+    margin-bottom: 27px;
+    @include media-lg {
+      display: block;
+    }
+    @include media-3xl {
+      margin-bottom: 32px;
+    }
+    @include media-4xl {
+      margin-bottom: 40px;
+    }
+    a {
+      color: #1F1F1F;
+      &:hover {
+        color: #FF4986;
+      }
+    }
+  }
+  &__info {
+    margin-top: 47px;
+    max-width: 273px;
+    @include media-xl {
+      margin-left: 35%;
+    }
+    @include media-3xl {
+
+    }
+    @include media-4xl {
+      margin-top: 70px;
+      max-width: 363px;
+    }
+
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    @include media-lg {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+    @include media-xxl {
+      margin-bottom: 7px;
+    }
+  }
+  &__img {
+    img {
+      max-width: 100%;
+      @include media-xxl {
+        max-width: 116%;
+      }
+      @include media-3xl {
+        max-width: 118%;
+      }
+      @include media-4xl {
+        max-width: initial;
+      }
+    }
+  }
+}

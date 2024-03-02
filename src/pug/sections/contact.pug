@@ -1,0 +1,21 @@
+section.contact
+  .contact--before(class="lazy" data-bg="img/bg/dots.webp")
+  .devider
+  .container 
+    .row
+      .col-12.col-lg-6
+        .title
+          span Наші
+          span.accent-text локації
+        .contact__info
+          .description
+            svg.icon
+              use(xlink:href="#icon-place")
+            div м. Київ вул. Новоконстантинівська 15
+          .description
+            svg.icon
+              use(xlink:href="#icon-phone")
+            a(href="tel:+380731824717") 073 182 47 17
+      .col-12.col-lg-6
+        .contact__img.gsap-from-right
+          img(data-src="img/map.webp", alt="map", width="948", height="596", class="lazy")
